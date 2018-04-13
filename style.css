@@ -1,0 +1,36 @@
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"]:disabled + label span {
+    background:url(images/disabled.png);
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(images/choosed.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(images/unchoosed.png);
+}
+/*
+    Дизайн
+*/
+div.main_block{
+  background: #111111;
+  background: linear-gradient(to right, #248dd0, #cd8282, #af4e4e);
+  border-radius: 16px;
+  height: 100%;
+  color: #
+}
+html {
+  background: #111111;
+  background: linear-gradient(to right, #5e0000, #4b0000, #9c0000);
+  border-radius: 6px;
+  height: 100%;
+  color: #
+}
