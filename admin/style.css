@@ -1,0 +1,164 @@
+:root{
+  --color-yellow: #E3AE57;
+  --color-black-shadow: #404040;
+  --color-fon: #E2EF70;
+  --color-barrier: #C5DDCB;
+  --color-top-panel: #0E7C7B;
+  --color-main: #FFFFFF;
+  --color-left-panel: #17BEBB;
+  --color-sidebar: #FFFFFF;
+  --color-icons: #FFFFFF;
+  --color-icon:  #128c89;
+  --color-icon-focus:  #0E7C7B;
+}
+@font-face {
+  font-family: Amaltea; /* Гарнитура шрифта */
+  src: url(fonts/11664.ttf); /* Путь к файлу со шрифтом */
+}
+body,
+html {
+  margin:0;
+  padding:0;
+  color:#000;
+  background: var(--color-fon);
+}
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  background: var(--color-sidebar);
+}
+
+#top-panel {
+  float: left;
+  width: 100%;
+  height: 70;
+  margin: auto;
+  background: var(--color-top-panel);
+}
+
+#header {
+  float: left;
+  padding: 20px 10px;
+  margin: 15px, 15px; /*описывает верхний и нижний, правый и левый отступы*/
+  border-radius: 10px;
+}
+
+#logo-block{
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: url(img/logo.png) no-repeat center center;
+  background-size: 80% 80%;
+  overflow:hidden;
+  text-indent:100%;
+  white-space:nowrap;
+  background-color: var(--color-barrier);
+}
+
+#invisible-link{
+  display: block;
+  left: 55px; top: 55px;
+  position: absolute;
+  height: 55px width: 55px;
+}
+
+#logo{
+  display:block;
+  margin:auto;
+}
+
+#left-panel {
+  width: 70px;
+  height: calc(100% + 28px);
+  float: left;
+  margin: auto;
+  background: var(--color-left-panel);
+  border-right: 8px solid var(--color-barrier); /* Параметры линии */
+}
+
+#nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  }
+#nav li {
+  display:inline;
+  margin:0;
+  padding:0;
+  }
+
+#icon-in-left-panel{
+  /* Переход */
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  /**/
+  padding: 10px 10px;
+  margin: 10px 5px;
+  background-color: var(--color-icon);
+  border-radius: 5px;
+
+}
+
+#icon-in-left-panel:hover{
+  background-color: var(--color-icon-focus);
+  border-radius: 20px;
+}
+
+#icon-calendar{
+  background: url("img/icons/calendar-and-clock.png");
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  margin:0;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 10px var(--color-black-shadow);
+  font-family: Amaltea, 'Amaltea One';
+  font-size: 22pt;
+  }
+
+#nav {
+  padding:5px 10px;
+  background: var(--color-navigation-bar);
+  }
+
+#main {
+  float:left;
+  width: calc(100% - 385px);
+  height: 100%;
+  padding:10px;
+  background: var(--color-main);
+  color: #1f1f1f;
+  border-top: 8px solid var(--color-barrier); /* Параметры линии */
+  border-left: 8px solid var(--color-barrier); /* Параметры линии */
+  border-right: 8px solid var(--color-barrier); /* Параметры линии */
+  }
+  h2 {
+  argin:0 0 1em;
+  }
+#sidebar {
+  float:left;
+  width: 250px;
+  height: ;
+  padding:10px;
+  background: var(--color-sidebar);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color-sidebar));
+  border-top: 8px solid var(--color-barrier); /* Параметры линии */
+  }
+
+#footer {
+  clear:both;
+  padding:5px 10px;
+  background:#cc9;
+  }
+#footer p {
+  margin:0;
+  }
+* html #footer {
+  height:1px;
+  }
